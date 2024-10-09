@@ -1,0 +1,137 @@
+ <!DOCTYPE html>
+<html lang=pt-PT>
+<head>
+<title>Radio Estremadura</title>
+<meta name="description" content="Estremadura24" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv=X-UA-Compatible content="IE=Edge"/>
+<meta property="og:title" content="Estremadura24 Player" />
+<meta property="og:description" content="Estremadura24" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="48x48" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="144x144" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/wiHgZBM.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i.imgur.com/wiHgZBM.png" sizes="180x180"/>
+</div>
+
+<body class="scroll-assist">
+	
+<div id="Estremadura24" style="width:100%; height: 80px; position: absolute; left:0; top:0; z-index: 300;
+
+-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-right-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 0px;
+-moz-border-radius-bottomleft: 0px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border: 0px solid rgba(255, 255, 255, 0.2);">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+<script src="https://carlosyes.github.io/script/script.js"></script>
+		   
+<script>
+		$("#Estremadura24").lunaradio({
+		userinterface: "small", 
+		backgroundcolor: "rgba(0,0,0,0.9)",
+		fontcolor: "#ffff00",
+		hightlightcolor: "#AC7FEB", 
+		fontname: "Poppins", 
+		googlefont: "Poppins", 
+		fontratio: "0.4", 
+		radioname: "", 
+		scroll: "true", 
+		coverimage: "https://i.imgur.com/xJ8SzAN.gif",
+		coverstyle: "animated", <!-- animated, circle -->
+		usevisualizer: "real", 
+		visualizertype: "3", 
+		itunestoken: "1000lIPN", 
+		metadatatechnic: "", 
+		ownmetadataurl: "", 
+		streamurl: "https://sonic.servsonic.com:7020", 
+		streamtype: "shoutcast2", 
+		icecastmountpoint: "", 
+		radionomyid: "", 
+		radionomyapikey: "",
+		radiojarid: "",  
+		radiocoid: "",
+		shoutcastpath: "/stream",
+		shoutcastid: "1", 
+		streamsuffix: "/stream", 
+		metadatainterval: "5000", 
+		volume: "100",
+		debug: "false",
+		multicolorvisualizer: "true",
+		autoplay:"true",
+		visualizeropacity: "2.0"
+       });
+</script>
+
+<script>
+
+    var message = "©arlos Copyright";
+
+    function clickIE4() {
+        if (event.button == 2) {
+            alert(message);
+            return false;
+        }
+    }
+
+    function clickNS4(e) {
+        if (document.layers || document.getElementById && !document.all) {
+            if (e.which == 2 || e.which == 3) {
+                alert(message);
+                return false;
+            }
+        }
+    }
+
+    if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = clickNS4;
+    } else if (document.all && !document.getElementById) {
+        document.onmousedown = clickIE4;
+    }
+
+    document.oncontextmenu = new Function("alert(message);return false")
+</script>
+<script>
+
+    function disableselect(e) {
+        return false
+    }
+    function reEnable() {
+        return true
+    }
+    document.onselectstart = new Function("return false")
+    if (window.sidebar) {
+        document.onmousedown = disableselect
+        document.onclick = reEnable
+    }
+</script>
+<script>
+        window.oncontextmenu = function () {
+            console.log("Right Click Disabled");
+            return false;
+        }
+    </script> 
+</html>
+  
+	
+
+
+
+
+
+
+</body>
+</html>
